@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\users\gilvandro\Desktop\projeto-cd-master\calculadora\simulation\qsim
+vProjeto
+Z1 I=Ol>WEFl^:[^SIWoAM2eJ1
+Z2 VGg[9C:^IHIfk10CLUmzWS2
+Z3 dC:\users\gilvandro\Desktop\projeto-cd-master\calculadora\simulation\qsim
+Z4 w1554645548
+Z5 8Projeto.vo
+Z6 FProjeto.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|Projeto.vo|
+Z9 o-work work -O0
+Z10 n@projeto
+!i10b 1
+Z11 !s100 6fj5n2NomVoJYk4Z66a[X1
+!s85 0
+Z12 !s108 1554645550.274000
+Z13 !s107 Projeto.vo|
+!s101 -O0
+vProjeto_vlg_check_tst
+!i10b 1
+!s100 To<;6X[CjGB@a_zW>E`Qz3
+I16UP]6f6M?VH]H0[cL8z_1
+V;f@XQ[X6C0Em0;>^e9>To2
+R3
+Z14 w1554645543
+Z15 8Projeto.vt
+Z16 FProjeto.vt
+L0 63
+R7
+r1
+!s85 0
+31
+Z17 !s108 1554645550.597000
+Z18 !s107 Projeto.vt|
+Z19 !s90 -work|work|Projeto.vt|
+!s101 -O0
+R9
+Z20 n@projeto_vlg_check_tst
+vProjeto_vlg_sample_tst
+!i10b 1
+Z21 !s100 MO4KX2a3Ec?P=QSTIL?^L1
+Z22 IYh_64i4;OU]`Nenon1NY62
+Z23 V:mY_G__zD_h`LA9<hm@Xj3
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R9
+Z24 n@projeto_vlg_sample_tst
+vProjeto_vlg_vec_tst
+!i10b 1
+!s100 Q0m;bWAHQ^m7ZoQLYRQbo1
+Ig;R4?JZz9H[LGcmn7fH5_3
+Z25 VX?_OE;RQcG8ZnU5V?h[YV2
+R3
+R14
+R15
+R16
+L0 586
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R9
+Z26 n@projeto_vlg_vec_tst

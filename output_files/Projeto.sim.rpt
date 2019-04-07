@@ -1,5 +1,5 @@
 Simulator report for Projeto
-Sat Apr 06 23:06:02 2019
+Sun Apr 07 10:59:56 2019
 Quartus II 32-bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -45,41 +45,41 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
-; Simulation Netlist Size     ; 166 nodes    ;
-; Simulation Coverage         ;      81.33 % ;
-; Total Number of Transitions ; 5168         ;
+; Simulation Netlist Size     ; 230 nodes    ;
+; Simulation Coverage         ;     100.00 % ;
+; Total Number of Transitions ; 29892        ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Cyclone II   ;
 +-----------------------------+--------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Simulator Settings                                                                                                                                                                         ;
-+--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+---------------+
-; Option                                                                                     ; Setting                                                                       ; Default Value ;
-+--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+---------------+
-; Simulation mode                                                                            ; Functional                                                                    ; Timing        ;
-; Start time                                                                                 ; 0 ns                                                                          ; 0 ns          ;
-; Simulation results format                                                                  ; VWF                                                                           ;               ;
-; Vector input source                                                                        ; C:/users/gilvandro/Desktop/projeto-cd-master/projeto-cd-master/Waveform10.vwf ;               ;
-; Add pins automatically to simulation output waveforms                                      ; On                                                                            ; On            ;
-; Check outputs                                                                              ; Off                                                                           ; Off           ;
-; Report simulation coverage                                                                 ; On                                                                            ; On            ;
-; Display complete 1/0 value coverage report                                                 ; On                                                                            ; On            ;
-; Display missing 1-value coverage report                                                    ; On                                                                            ; On            ;
-; Display missing 0-value coverage report                                                    ; On                                                                            ; On            ;
-; Detect setup and hold time violations                                                      ; Off                                                                           ; Off           ;
-; Detect glitches                                                                            ; Off                                                                           ; Off           ;
-; Disable timing delays in Timing Simulation                                                 ; Off                                                                           ; Off           ;
-; Generate Signal Activity File                                                              ; Off                                                                           ; Off           ;
-; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                           ; Off           ;
-; Group bus channels in simulation results                                                   ; Off                                                                           ; Off           ;
-; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                            ; On            ;
-; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                                    ; INPUT_EDGE    ;
-; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                           ; Off           ;
-; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                           ;               ;
-; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                          ; Auto          ;
-+--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+---------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                                  ;
++--------------------------------------------------------------------------------------------+------------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                                ; Default Value ;
++--------------------------------------------------------------------------------------------+------------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                             ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                                   ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                                    ;               ;
+; Vector input source                                                                        ; C:/users/gilvandro/Desktop/projeto-cd-master/calculadora/Waveform4.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                     ; On            ;
+; Check outputs                                                                              ; Off                                                                    ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                     ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                     ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                     ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                     ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                                    ; Off           ;
+; Detect glitches                                                                            ; Off                                                                    ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                                    ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                                    ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                    ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                                    ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                     ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                             ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                    ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                    ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                   ; Auto          ;
++--------------------------------------------------------------------------------------------+------------------------------------------------------------------------+---------------+
 
 
 +----------------------+
@@ -94,13 +94,13 @@ Please use Quartus II 32-bit to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      81.33 % ;
-; Total nodes checked                                 ; 166          ;
-; Total output ports checked                          ; 166          ;
-; Total output ports with complete 1/0-value coverage ; 135          ;
-; Total output ports with no 1/0-value coverage       ; 22           ;
-; Total output ports with no 1-value coverage         ; 29           ;
-; Total output ports with no 0-value coverage         ; 24           ;
+; Total coverage as a percentage                      ;     100.00 % ;
+; Total nodes checked                                 ; 230          ;
+; Total output ports checked                          ; 230          ;
+; Total output ports with complete 1/0-value coverage ; 230          ;
+; Total output ports with no 1/0-value coverage       ; 0            ;
+; Total output ports with no 1-value coverage         ; 0            ;
+; Total output ports with no 0-value coverage         ; 0            ;
 +-----------------------------------------------------+--------------+
 
 
@@ -118,6 +118,10 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |Projeto|b[1]                                                 ; |Projeto|b[1]                                                 ; out              ;
 ; |Projeto|b[2]                                                 ; |Projeto|b[2]                                                 ; out              ;
 ; |Projeto|b[3]                                                 ; |Projeto|b[3]                                                 ; out              ;
+; |Projeto|ld                                                   ; |Projeto|ld                                                   ; out              ;
+; |Projeto|key[0]                                               ; |Projeto|key[0]                                               ; out              ;
+; |Projeto|key[1]                                               ; |Projeto|key[1]                                               ; out              ;
+; |Projeto|key[2]                                               ; |Projeto|key[2]                                               ; out              ;
 ; |Projeto|rsoma[0]                                             ; |Projeto|rsoma[0]                                             ; pin_out          ;
 ; |Projeto|rsoma[1]                                             ; |Projeto|rsoma[1]                                             ; pin_out          ;
 ; |Projeto|rsoma[2]                                             ; |Projeto|rsoma[2]                                             ; pin_out          ;
@@ -130,37 +134,128 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |Projeto|rinv[1]                                              ; |Projeto|rinv[1]                                              ; pin_out          ;
 ; |Projeto|rinv[2]                                              ; |Projeto|rinv[2]                                              ; pin_out          ;
 ; |Projeto|rinv[3]                                              ; |Projeto|rinv[3]                                              ; pin_out          ;
-; |Projeto|rdisp[0]                                             ; |Projeto|rdisp[0]                                             ; pin_out          ;
-; |Projeto|rdisp[1]                                             ; |Projeto|rdisp[1]                                             ; pin_out          ;
-; |Projeto|rdisp[2]                                             ; |Projeto|rdisp[2]                                             ; pin_out          ;
-; |Projeto|rdisp[3]                                             ; |Projeto|rdisp[3]                                             ; pin_out          ;
+; |Projeto|dsp[0]                                               ; |Projeto|dsp[0]                                               ; pin_out          ;
+; |Projeto|dsp[1]                                               ; |Projeto|dsp[1]                                               ; pin_out          ;
+; |Projeto|dsp[2]                                               ; |Projeto|dsp[2]                                               ; pin_out          ;
+; |Projeto|dsp[3]                                               ; |Projeto|dsp[3]                                               ; pin_out          ;
+; |Projeto|dsp[4]                                               ; |Projeto|dsp[4]                                               ; pin_out          ;
+; |Projeto|dsp[5]                                               ; |Projeto|dsp[5]                                               ; pin_out          ;
+; |Projeto|dsp[6]                                               ; |Projeto|dsp[6]                                               ; pin_out          ;
 ; |Projeto|cout                                                 ; |Projeto|cout                                                 ; pin_out          ;
 ; |Projeto|coutmai                                              ; |Projeto|coutmai                                              ; pin_out          ;
 ; |Projeto|coutmen                                              ; |Projeto|coutmen                                              ; pin_out          ;
+; |Projeto|display:mostrar|dsp~0                                ; |Projeto|display:mostrar|dsp~0                                ; out0             ;
+; |Projeto|display:mostrar|dsp~1                                ; |Projeto|display:mostrar|dsp~1                                ; out0             ;
+; |Projeto|display:mostrar|dsp~2                                ; |Projeto|display:mostrar|dsp~2                                ; out0             ;
+; |Projeto|display:mostrar|dsp~3                                ; |Projeto|display:mostrar|dsp~3                                ; out0             ;
+; |Projeto|display:mostrar|dsp~4                                ; |Projeto|display:mostrar|dsp~4                                ; out0             ;
+; |Projeto|display:mostrar|dsp~5                                ; |Projeto|display:mostrar|dsp~5                                ; out0             ;
+; |Projeto|display:mostrar|dsp~6                                ; |Projeto|display:mostrar|dsp~6                                ; out0             ;
+; |Projeto|display:mostrar|dsp~7                                ; |Projeto|display:mostrar|dsp~7                                ; out0             ;
+; |Projeto|display:mostrar|dsp[0]                               ; |Projeto|display:mostrar|dsp[0]                               ; out0             ;
+; |Projeto|display:mostrar|dsp~9                                ; |Projeto|display:mostrar|dsp~9                                ; out0             ;
+; |Projeto|display:mostrar|dsp~10                               ; |Projeto|display:mostrar|dsp~10                               ; out0             ;
+; |Projeto|display:mostrar|dsp~11                               ; |Projeto|display:mostrar|dsp~11                               ; out0             ;
+; |Projeto|display:mostrar|dsp~12                               ; |Projeto|display:mostrar|dsp~12                               ; out0             ;
+; |Projeto|display:mostrar|dsp~13                               ; |Projeto|display:mostrar|dsp~13                               ; out0             ;
+; |Projeto|display:mostrar|dsp~14                               ; |Projeto|display:mostrar|dsp~14                               ; out0             ;
+; |Projeto|display:mostrar|dsp~15                               ; |Projeto|display:mostrar|dsp~15                               ; out0             ;
+; |Projeto|display:mostrar|dsp[1]                               ; |Projeto|display:mostrar|dsp[1]                               ; out0             ;
+; |Projeto|display:mostrar|dsp~17                               ; |Projeto|display:mostrar|dsp~17                               ; out0             ;
+; |Projeto|display:mostrar|dsp~18                               ; |Projeto|display:mostrar|dsp~18                               ; out0             ;
+; |Projeto|display:mostrar|dsp~19                               ; |Projeto|display:mostrar|dsp~19                               ; out0             ;
+; |Projeto|display:mostrar|dsp~20                               ; |Projeto|display:mostrar|dsp~20                               ; out0             ;
+; |Projeto|display:mostrar|dsp[2]                               ; |Projeto|display:mostrar|dsp[2]                               ; out0             ;
+; |Projeto|display:mostrar|dsp~22                               ; |Projeto|display:mostrar|dsp~22                               ; out0             ;
+; |Projeto|display:mostrar|dsp~23                               ; |Projeto|display:mostrar|dsp~23                               ; out0             ;
+; |Projeto|display:mostrar|dsp~24                               ; |Projeto|display:mostrar|dsp~24                               ; out0             ;
+; |Projeto|display:mostrar|dsp~25                               ; |Projeto|display:mostrar|dsp~25                               ; out0             ;
+; |Projeto|display:mostrar|dsp~26                               ; |Projeto|display:mostrar|dsp~26                               ; out0             ;
+; |Projeto|display:mostrar|dsp~27                               ; |Projeto|display:mostrar|dsp~27                               ; out0             ;
+; |Projeto|display:mostrar|dsp~28                               ; |Projeto|display:mostrar|dsp~28                               ; out0             ;
+; |Projeto|display:mostrar|dsp~29                               ; |Projeto|display:mostrar|dsp~29                               ; out0             ;
+; |Projeto|display:mostrar|dsp~30                               ; |Projeto|display:mostrar|dsp~30                               ; out0             ;
+; |Projeto|display:mostrar|dsp~31                               ; |Projeto|display:mostrar|dsp~31                               ; out0             ;
+; |Projeto|display:mostrar|dsp[3]                               ; |Projeto|display:mostrar|dsp[3]                               ; out0             ;
+; |Projeto|display:mostrar|dsp~33                               ; |Projeto|display:mostrar|dsp~33                               ; out0             ;
+; |Projeto|display:mostrar|dsp~34                               ; |Projeto|display:mostrar|dsp~34                               ; out0             ;
+; |Projeto|display:mostrar|dsp~35                               ; |Projeto|display:mostrar|dsp~35                               ; out0             ;
+; |Projeto|display:mostrar|dsp~36                               ; |Projeto|display:mostrar|dsp~36                               ; out0             ;
+; |Projeto|display:mostrar|dsp~37                               ; |Projeto|display:mostrar|dsp~37                               ; out0             ;
+; |Projeto|display:mostrar|dsp~38                               ; |Projeto|display:mostrar|dsp~38                               ; out0             ;
+; |Projeto|display:mostrar|dsp~39                               ; |Projeto|display:mostrar|dsp~39                               ; out0             ;
+; |Projeto|display:mostrar|dsp~40                               ; |Projeto|display:mostrar|dsp~40                               ; out0             ;
+; |Projeto|display:mostrar|dsp~41                               ; |Projeto|display:mostrar|dsp~41                               ; out0             ;
+; |Projeto|display:mostrar|dsp~42                               ; |Projeto|display:mostrar|dsp~42                               ; out0             ;
+; |Projeto|display:mostrar|dsp[4]                               ; |Projeto|display:mostrar|dsp[4]                               ; out0             ;
+; |Projeto|display:mostrar|dsp~44                               ; |Projeto|display:mostrar|dsp~44                               ; out0             ;
+; |Projeto|display:mostrar|dsp~45                               ; |Projeto|display:mostrar|dsp~45                               ; out0             ;
+; |Projeto|display:mostrar|dsp~46                               ; |Projeto|display:mostrar|dsp~46                               ; out0             ;
+; |Projeto|display:mostrar|dsp~47                               ; |Projeto|display:mostrar|dsp~47                               ; out0             ;
+; |Projeto|display:mostrar|dsp~48                               ; |Projeto|display:mostrar|dsp~48                               ; out0             ;
+; |Projeto|display:mostrar|dsp~49                               ; |Projeto|display:mostrar|dsp~49                               ; out0             ;
+; |Projeto|display:mostrar|dsp~50                               ; |Projeto|display:mostrar|dsp~50                               ; out0             ;
+; |Projeto|display:mostrar|dsp[5]                               ; |Projeto|display:mostrar|dsp[5]                               ; out0             ;
+; |Projeto|display:mostrar|dsp~52                               ; |Projeto|display:mostrar|dsp~52                               ; out0             ;
+; |Projeto|display:mostrar|dsp~53                               ; |Projeto|display:mostrar|dsp~53                               ; out0             ;
+; |Projeto|display:mostrar|dsp~54                               ; |Projeto|display:mostrar|dsp~54                               ; out0             ;
+; |Projeto|display:mostrar|dsp~55                               ; |Projeto|display:mostrar|dsp~55                               ; out0             ;
+; |Projeto|display:mostrar|dsp~56                               ; |Projeto|display:mostrar|dsp~56                               ; out0             ;
+; |Projeto|display:mostrar|dsp~57                               ; |Projeto|display:mostrar|dsp~57                               ; out0             ;
+; |Projeto|display:mostrar|dsp~58                               ; |Projeto|display:mostrar|dsp~58                               ; out0             ;
+; |Projeto|display:mostrar|dsp~59                               ; |Projeto|display:mostrar|dsp~59                               ; out0             ;
+; |Projeto|display:mostrar|dsp~60                               ; |Projeto|display:mostrar|dsp~60                               ; out0             ;
+; |Projeto|display:mostrar|dsp~61                               ; |Projeto|display:mostrar|dsp~61                               ; out0             ;
+; |Projeto|display:mostrar|dsp~62                               ; |Projeto|display:mostrar|dsp~62                               ; out0             ;
+; |Projeto|display:mostrar|dsp~63                               ; |Projeto|display:mostrar|dsp~63                               ; out0             ;
+; |Projeto|display:mostrar|dsp[6]                               ; |Projeto|display:mostrar|dsp[6]                               ; out0             ;
 ; |Projeto|mux:multiplexador|resultadoDisplay~0                 ; |Projeto|mux:multiplexador|resultadoDisplay~0                 ; out0             ;
+; |Projeto|mux:multiplexador|resultadoDisplay~1                 ; |Projeto|mux:multiplexador|resultadoDisplay~1                 ; out0             ;
 ; |Projeto|mux:multiplexador|resultadoDisplay~2                 ; |Projeto|mux:multiplexador|resultadoDisplay~2                 ; out0             ;
 ; |Projeto|mux:multiplexador|resultadoDisplay~3                 ; |Projeto|mux:multiplexador|resultadoDisplay~3                 ; out0             ;
 ; |Projeto|mux:multiplexador|resultadoDisplay[0]                ; |Projeto|mux:multiplexador|resultadoDisplay[0]                ; out0             ;
 ; |Projeto|mux:multiplexador|resultadoDisplay~5                 ; |Projeto|mux:multiplexador|resultadoDisplay~5                 ; out0             ;
+; |Projeto|mux:multiplexador|resultadoDisplay~6                 ; |Projeto|mux:multiplexador|resultadoDisplay~6                 ; out0             ;
 ; |Projeto|mux:multiplexador|resultadoDisplay~7                 ; |Projeto|mux:multiplexador|resultadoDisplay~7                 ; out0             ;
 ; |Projeto|mux:multiplexador|resultadoDisplay~8                 ; |Projeto|mux:multiplexador|resultadoDisplay~8                 ; out0             ;
 ; |Projeto|mux:multiplexador|resultadoDisplay[1]                ; |Projeto|mux:multiplexador|resultadoDisplay[1]                ; out0             ;
 ; |Projeto|mux:multiplexador|resultadoDisplay~10                ; |Projeto|mux:multiplexador|resultadoDisplay~10                ; out0             ;
+; |Projeto|mux:multiplexador|resultadoDisplay~11                ; |Projeto|mux:multiplexador|resultadoDisplay~11                ; out0             ;
 ; |Projeto|mux:multiplexador|resultadoDisplay~12                ; |Projeto|mux:multiplexador|resultadoDisplay~12                ; out0             ;
 ; |Projeto|mux:multiplexador|resultadoDisplay~13                ; |Projeto|mux:multiplexador|resultadoDisplay~13                ; out0             ;
 ; |Projeto|mux:multiplexador|resultadoDisplay[2]                ; |Projeto|mux:multiplexador|resultadoDisplay[2]                ; out0             ;
+; |Projeto|mux:multiplexador|resultadoDisplay~15                ; |Projeto|mux:multiplexador|resultadoDisplay~15                ; out0             ;
+; |Projeto|mux:multiplexador|resultadoDisplay~16                ; |Projeto|mux:multiplexador|resultadoDisplay~16                ; out0             ;
 ; |Projeto|mux:multiplexador|resultadoDisplay~17                ; |Projeto|mux:multiplexador|resultadoDisplay~17                ; out0             ;
 ; |Projeto|mux:multiplexador|resultadoDisplay~18                ; |Projeto|mux:multiplexador|resultadoDisplay~18                ; out0             ;
+; |Projeto|mux:multiplexador|resultadoDisplay~19                ; |Projeto|mux:multiplexador|resultadoDisplay~19                ; out0             ;
+; |Projeto|mux:multiplexador|resultadoDisplay~20                ; |Projeto|mux:multiplexador|resultadoDisplay~20                ; out0             ;
+; |Projeto|mux:multiplexador|resultadoDisplay~21                ; |Projeto|mux:multiplexador|resultadoDisplay~21                ; out0             ;
+; |Projeto|mux:multiplexador|resultadoDisplay~22                ; |Projeto|mux:multiplexador|resultadoDisplay~22                ; out0             ;
 ; |Projeto|mux:multiplexador|resultadoDisplay~23                ; |Projeto|mux:multiplexador|resultadoDisplay~23                ; out0             ;
+; |Projeto|mux:multiplexador|resultadoDisplay~24                ; |Projeto|mux:multiplexador|resultadoDisplay~24                ; out0             ;
+; |Projeto|mux:multiplexador|resultadoDisplay~25                ; |Projeto|mux:multiplexador|resultadoDisplay~25                ; out0             ;
+; |Projeto|mux:multiplexador|resultadoDisplay~26                ; |Projeto|mux:multiplexador|resultadoDisplay~26                ; out0             ;
 ; |Projeto|mux:multiplexador|resultadoDisplay~27                ; |Projeto|mux:multiplexador|resultadoDisplay~27                ; out0             ;
 ; |Projeto|mux:multiplexador|resultadoDisplay[3]                ; |Projeto|mux:multiplexador|resultadoDisplay[3]                ; out0             ;
 ; |Projeto|mux:multiplexador|cout~0                             ; |Projeto|mux:multiplexador|cout~0                             ; out0             ;
+; |Projeto|mux:multiplexador|cout~1                             ; |Projeto|mux:multiplexador|cout~1                             ; out0             ;
 ; |Projeto|mux:multiplexador|cout~2                             ; |Projeto|mux:multiplexador|cout~2                             ; out0             ;
 ; |Projeto|mux:multiplexador|cout~3                             ; |Projeto|mux:multiplexador|cout~3                             ; out0             ;
 ; |Projeto|mux:multiplexador|cout~4                             ; |Projeto|mux:multiplexador|cout~4                             ; out0             ;
 ; |Projeto|mux:multiplexador|cout~5                             ; |Projeto|mux:multiplexador|cout~5                             ; out0             ;
+; |Projeto|mux:multiplexador|cout~6                             ; |Projeto|mux:multiplexador|cout~6                             ; out0             ;
+; |Projeto|mux:multiplexador|cout~7                             ; |Projeto|mux:multiplexador|cout~7                             ; out0             ;
+; |Projeto|mux:multiplexador|cout~8                             ; |Projeto|mux:multiplexador|cout~8                             ; out0             ;
+; |Projeto|mux:multiplexador|cout~9                             ; |Projeto|mux:multiplexador|cout~9                             ; out0             ;
 ; |Projeto|mux:multiplexador|cout~10                            ; |Projeto|mux:multiplexador|cout~10                            ; out0             ;
 ; |Projeto|mux:multiplexador|cout                               ; |Projeto|mux:multiplexador|cout                               ; out0             ;
+; |Projeto|mux:multiplexador|ctrl[0]                            ; |Projeto|mux:multiplexador|ctrl[0]                            ; out0             ;
+; |Projeto|mux:multiplexador|ctrl~1                             ; |Projeto|mux:multiplexador|ctrl~1                             ; out0             ;
+; |Projeto|mux:multiplexador|ctrl~2                             ; |Projeto|mux:multiplexador|ctrl~2                             ; out0             ;
+; |Projeto|mux:multiplexador|ctrl~3                             ; |Projeto|mux:multiplexador|ctrl~3                             ; out0             ;
+; |Projeto|mux:multiplexador|ctrl~4                             ; |Projeto|mux:multiplexador|ctrl~4                             ; out0             ;
+; |Projeto|mux:multiplexador|ctrl[1]                            ; |Projeto|mux:multiplexador|ctrl[1]                            ; out0             ;
 ; |Projeto|menor:menos|maior:comparar|subtrador:subtrair|cin~0  ; |Projeto|menor:menos|maior:comparar|subtrador:subtrair|cin~0  ; out0             ;
 ; |Projeto|menor:menos|maior:comparar|subtrador:subtrair|cin~1  ; |Projeto|menor:menos|maior:comparar|subtrador:subtrair|cin~1  ; out0             ;
 ; |Projeto|menor:menos|maior:comparar|subtrador:subtrair|cin[1] ; |Projeto|menor:menos|maior:comparar|subtrador:subtrair|cin[1] ; out0             ;
@@ -249,74 +344,19 @@ The following table displays output ports that toggle between 1 and 0 during sim
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
-+--------------------------------------------------------------------------------------------------------------------+
-; Missing 1-Value Coverage                                                                                           ;
-+------------------------------------------------+------------------------------------------------+------------------+
-; Node Name                                      ; Output Port Name                               ; Output Port Type ;
-+------------------------------------------------+------------------------------------------------+------------------+
-; |Projeto|ld                                    ; |Projeto|ld                                    ; out              ;
-; |Projeto|key[0]                                ; |Projeto|key[0]                                ; out              ;
-; |Projeto|key[1]                                ; |Projeto|key[1]                                ; out              ;
-; |Projeto|key[2]                                ; |Projeto|key[2]                                ; out              ;
-; |Projeto|dsp[0]                                ; |Projeto|dsp[0]                                ; pin_out          ;
-; |Projeto|dsp[1]                                ; |Projeto|dsp[1]                                ; pin_out          ;
-; |Projeto|dsp[2]                                ; |Projeto|dsp[2]                                ; pin_out          ;
-; |Projeto|dsp[3]                                ; |Projeto|dsp[3]                                ; pin_out          ;
-; |Projeto|dsp[4]                                ; |Projeto|dsp[4]                                ; pin_out          ;
-; |Projeto|dsp[5]                                ; |Projeto|dsp[5]                                ; pin_out          ;
-; |Projeto|dsp[6]                                ; |Projeto|dsp[6]                                ; pin_out          ;
-; |Projeto|mux:multiplexador|resultadoDisplay~1  ; |Projeto|mux:multiplexador|resultadoDisplay~1  ; out0             ;
-; |Projeto|mux:multiplexador|resultadoDisplay~6  ; |Projeto|mux:multiplexador|resultadoDisplay~6  ; out0             ;
-; |Projeto|mux:multiplexador|resultadoDisplay~11 ; |Projeto|mux:multiplexador|resultadoDisplay~11 ; out0             ;
-; |Projeto|mux:multiplexador|resultadoDisplay~19 ; |Projeto|mux:multiplexador|resultadoDisplay~19 ; out0             ;
-; |Projeto|mux:multiplexador|resultadoDisplay~20 ; |Projeto|mux:multiplexador|resultadoDisplay~20 ; out0             ;
-; |Projeto|mux:multiplexador|resultadoDisplay~21 ; |Projeto|mux:multiplexador|resultadoDisplay~21 ; out0             ;
-; |Projeto|mux:multiplexador|resultadoDisplay~22 ; |Projeto|mux:multiplexador|resultadoDisplay~22 ; out0             ;
-; |Projeto|mux:multiplexador|resultadoDisplay~24 ; |Projeto|mux:multiplexador|resultadoDisplay~24 ; out0             ;
-; |Projeto|mux:multiplexador|resultadoDisplay~25 ; |Projeto|mux:multiplexador|resultadoDisplay~25 ; out0             ;
-; |Projeto|mux:multiplexador|resultadoDisplay~26 ; |Projeto|mux:multiplexador|resultadoDisplay~26 ; out0             ;
-; |Projeto|mux:multiplexador|cout~1              ; |Projeto|mux:multiplexador|cout~1              ; out0             ;
-; |Projeto|mux:multiplexador|cout~6              ; |Projeto|mux:multiplexador|cout~6              ; out0             ;
-; |Projeto|mux:multiplexador|cout~7              ; |Projeto|mux:multiplexador|cout~7              ; out0             ;
-; |Projeto|mux:multiplexador|cout~8              ; |Projeto|mux:multiplexador|cout~8              ; out0             ;
-; |Projeto|mux:multiplexador|cout~9              ; |Projeto|mux:multiplexador|cout~9              ; out0             ;
-; |Projeto|mux:multiplexador|cout~11             ; |Projeto|mux:multiplexador|cout~11             ; out0             ;
-; |Projeto|mux:multiplexador|cout~12             ; |Projeto|mux:multiplexador|cout~12             ; out0             ;
-; |Projeto|mux:multiplexador|cout~13             ; |Projeto|mux:multiplexador|cout~13             ; out0             ;
-+------------------------------------------------+------------------------------------------------+------------------+
++-------------------------------------------------+
+; Missing 1-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 0 during simulation.
-+--------------------------------------------------------------------------------------------------------------------+
-; Missing 0-Value Coverage                                                                                           ;
-+------------------------------------------------+------------------------------------------------+------------------+
-; Node Name                                      ; Output Port Name                               ; Output Port Type ;
-+------------------------------------------------+------------------------------------------------+------------------+
-; |Projeto|dsp[0]                                ; |Projeto|dsp[0]                                ; pin_out          ;
-; |Projeto|dsp[1]                                ; |Projeto|dsp[1]                                ; pin_out          ;
-; |Projeto|dsp[2]                                ; |Projeto|dsp[2]                                ; pin_out          ;
-; |Projeto|dsp[3]                                ; |Projeto|dsp[3]                                ; pin_out          ;
-; |Projeto|dsp[4]                                ; |Projeto|dsp[4]                                ; pin_out          ;
-; |Projeto|dsp[5]                                ; |Projeto|dsp[5]                                ; pin_out          ;
-; |Projeto|dsp[6]                                ; |Projeto|dsp[6]                                ; pin_out          ;
-; |Projeto|mux:multiplexador|resultadoDisplay~1  ; |Projeto|mux:multiplexador|resultadoDisplay~1  ; out0             ;
-; |Projeto|mux:multiplexador|resultadoDisplay~6  ; |Projeto|mux:multiplexador|resultadoDisplay~6  ; out0             ;
-; |Projeto|mux:multiplexador|resultadoDisplay~11 ; |Projeto|mux:multiplexador|resultadoDisplay~11 ; out0             ;
-; |Projeto|mux:multiplexador|resultadoDisplay~15 ; |Projeto|mux:multiplexador|resultadoDisplay~15 ; out0             ;
-; |Projeto|mux:multiplexador|resultadoDisplay~16 ; |Projeto|mux:multiplexador|resultadoDisplay~16 ; out0             ;
-; |Projeto|mux:multiplexador|resultadoDisplay~19 ; |Projeto|mux:multiplexador|resultadoDisplay~19 ; out0             ;
-; |Projeto|mux:multiplexador|resultadoDisplay~20 ; |Projeto|mux:multiplexador|resultadoDisplay~20 ; out0             ;
-; |Projeto|mux:multiplexador|resultadoDisplay~21 ; |Projeto|mux:multiplexador|resultadoDisplay~21 ; out0             ;
-; |Projeto|mux:multiplexador|resultadoDisplay~22 ; |Projeto|mux:multiplexador|resultadoDisplay~22 ; out0             ;
-; |Projeto|mux:multiplexador|cout~1              ; |Projeto|mux:multiplexador|cout~1              ; out0             ;
-; |Projeto|mux:multiplexador|cout~6              ; |Projeto|mux:multiplexador|cout~6              ; out0             ;
-; |Projeto|mux:multiplexador|cout~7              ; |Projeto|mux:multiplexador|cout~7              ; out0             ;
-; |Projeto|mux:multiplexador|cout~8              ; |Projeto|mux:multiplexador|cout~8              ; out0             ;
-; |Projeto|mux:multiplexador|cout~9              ; |Projeto|mux:multiplexador|cout~9              ; out0             ;
-; |Projeto|mux:multiplexador|cout~11             ; |Projeto|mux:multiplexador|cout~11             ; out0             ;
-; |Projeto|mux:multiplexador|cout~12             ; |Projeto|mux:multiplexador|cout~12             ; out0             ;
-; |Projeto|mux:multiplexador|cout~13             ; |Projeto|mux:multiplexador|cout~13             ; out0             ;
-+------------------------------------------------+------------------------------------------------+------------------+
++-------------------------------------------------+
+; Missing 0-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
 
 
 +---------------------+
@@ -332,19 +372,19 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Simulator
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Sat Apr 06 23:06:02 2019
+    Info: Processing started: Sun Apr 07 10:59:55 2019
 Info: Command: quartus_sim --simulation_results_format=VWF Projeto -c Projeto
-Info (324025): Using vector source file "C:/users/gilvandro/Desktop/projeto-cd-master/projeto-cd-master/Waveform10.vwf"
+Info (324025): Using vector source file "C:/users/gilvandro/Desktop/projeto-cd-master/calculadora/Waveform4.vwf"
 Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info (310002): Simulation partitioned into 1 sub-simulations
-Info (328053): Simulation coverage is      81.33 %
-Info (328052): Number of transitions in simulation is 5168
+Info (328053): Simulation coverage is     100.00 %
+Info (328052): Number of transitions in simulation is 29892
 Info (324045): Vector file Projeto.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
 Info: Quartus II 32-bit Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 0 megabytes
-    Info: Processing ended: Sat Apr 06 23:06:02 2019
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Sun Apr 07 10:59:56 2019
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Projeto
-Sat Apr 06 23:01:29 2019
+Sun Apr 07 10:47:46 2019
 Quartus II 32-bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -14,10 +14,9 @@ Quartus II 32-bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Port Connectivity Checks: "mux:multiplexador"
- 10. Port Connectivity Checks: "maior:mais|subtrador:subtrair"
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+  9. Port Connectivity Checks: "maior:mais|subtrador:subtrair"
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -43,16 +42,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Apr 06 23:01:29 2019      ;
+; Analysis & Synthesis Status        ; Successful - Sun Apr 07 10:47:46 2019      ;
 ; Quartus II 32-bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; Projeto                                    ;
 ; Top-level Entity Name              ; Projeto                                    ;
 ; Family                             ; Cyclone II                                 ;
-; Total logic elements               ; 33                                         ;
-;     Total combinational functions  ; 33                                         ;
+; Total logic elements               ; 58                                         ;
+;     Total combinational functions  ; 58                                         ;
 ;     Dedicated logic registers      ; 0                                          ;
 ; Total registers                    ; 0                                          ;
-; Total pins                         ; 38                                         ;
+; Total pins                         ; 34                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -156,49 +155,50 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                              ;
-+----------------------------------+-----------------+-----------------------+------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                                 ; Library ;
-+----------------------------------+-----------------+-----------------------+------------------------------------------------------------------------------+---------+
-; Projeto.vhd                      ; yes             ; User VHDL File        ; C:/users/gilvandro/Desktop/projeto-cd-master/projeto-cd-master/Projeto.vhd   ;         ;
-; menor.vhd                        ; yes             ; User VHDL File        ; C:/users/gilvandro/Desktop/projeto-cd-master/projeto-cd-master/menor.vhd     ;         ;
-; inversor.vhd                     ; yes             ; User VHDL File        ; C:/users/gilvandro/Desktop/projeto-cd-master/projeto-cd-master/inversor.vhd  ;         ;
-; mux.vhd                          ; yes             ; User VHDL File        ; C:/users/gilvandro/Desktop/projeto-cd-master/projeto-cd-master/mux.vhd       ;         ;
-; somador.vhd                      ; yes             ; Auto-Found VHDL File  ; C:/users/gilvandro/Desktop/projeto-cd-master/projeto-cd-master/somador.vhd   ;         ;
-; subtrador.vhd                    ; yes             ; Auto-Found VHDL File  ; C:/users/gilvandro/Desktop/projeto-cd-master/projeto-cd-master/subtrador.vhd ;         ;
-; maior.vhd                        ; yes             ; Auto-Found VHDL File  ; C:/users/gilvandro/Desktop/projeto-cd-master/projeto-cd-master/maior.vhd     ;         ;
-+----------------------------------+-----------------+-----------------------+------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                        ;
++----------------------------------+-----------------+-----------------------+------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                           ; Library ;
++----------------------------------+-----------------+-----------------------+------------------------------------------------------------------------+---------+
+; Projeto.vhd                      ; yes             ; User VHDL File        ; C:/users/gilvandro/Desktop/projeto-cd-master/calculadora/Projeto.vhd   ;         ;
+; menor.vhd                        ; yes             ; User VHDL File        ; C:/users/gilvandro/Desktop/projeto-cd-master/calculadora/menor.vhd     ;         ;
+; inversor.vhd                     ; yes             ; User VHDL File        ; C:/users/gilvandro/Desktop/projeto-cd-master/calculadora/inversor.vhd  ;         ;
+; mux.vhd                          ; yes             ; User VHDL File        ; C:/users/gilvandro/Desktop/projeto-cd-master/calculadora/mux.vhd       ;         ;
+; display.vhd                      ; yes             ; User VHDL File        ; C:/users/gilvandro/Desktop/projeto-cd-master/calculadora/display.vhd   ;         ;
+; somador.vhd                      ; yes             ; Auto-Found VHDL File  ; C:/users/gilvandro/Desktop/projeto-cd-master/calculadora/somador.vhd   ;         ;
+; subtrador.vhd                    ; yes             ; Auto-Found VHDL File  ; C:/users/gilvandro/Desktop/projeto-cd-master/calculadora/subtrador.vhd ;         ;
+; maior.vhd                        ; yes             ; Auto-Found VHDL File  ; C:/users/gilvandro/Desktop/projeto-cd-master/calculadora/maior.vhd     ;         ;
++----------------------------------+-----------------+-----------------------+------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Estimated Total logic elements              ; 33    ;
-;                                             ;       ;
-; Total combinational functions               ; 33    ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 17    ;
-;     -- 3 input functions                    ; 15    ;
-;     -- <=2 input functions                  ; 1     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 33    ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 0     ;
-;     -- Dedicated logic registers            ; 0     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 38    ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-; Maximum fan-out node                        ; a[0]  ;
-; Maximum fan-out                             ; 8     ;
-; Total fan-out                               ; 134   ;
-; Average fan-out                             ; 1.89  ;
-+---------------------------------------------+-------+
++---------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                           ;
++---------------------------------------------+-----------------------------------------+
+; Resource                                    ; Usage                                   ;
++---------------------------------------------+-----------------------------------------+
+; Estimated Total logic elements              ; 58                                      ;
+;                                             ;                                         ;
+; Total combinational functions               ; 58                                      ;
+; Logic element usage by number of LUT inputs ;                                         ;
+;     -- 4 input functions                    ; 36                                      ;
+;     -- 3 input functions                    ; 20                                      ;
+;     -- <=2 input functions                  ; 2                                       ;
+;                                             ;                                         ;
+; Logic elements by mode                      ;                                         ;
+;     -- normal mode                          ; 58                                      ;
+;     -- arithmetic mode                      ; 0                                       ;
+;                                             ;                                         ;
+; Total registers                             ; 0                                       ;
+;     -- Dedicated logic registers            ; 0                                       ;
+;     -- I/O registers                        ; 0                                       ;
+;                                             ;                                         ;
+; I/O pins                                    ; 34                                      ;
+; Embedded Multiplier 9-bit elements          ; 0                                       ;
+; Maximum fan-out node                        ; mux:multiplexador|resultadoDisplay[0]~2 ;
+; Maximum fan-out                             ; 11                                      ;
+; Total fan-out                               ; 230                                     ;
+; Average fan-out                             ; 2.50                                    ;
++---------------------------------------------+-----------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -206,12 +206,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                    ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------+--------------+
-; |Projeto                   ; 33 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 38   ; 0            ; |Projeto                               ;              ;
-;    |maior:mais|            ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Projeto|maior:mais                    ;              ;
-;       |subtrador:subtrair| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Projeto|maior:mais|subtrador:subtrair ;              ;
-;    |mux:multiplexador|     ; 17 (17)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Projeto|mux:multiplexador             ;              ;
+; |Projeto                   ; 58 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 34   ; 0            ; |Projeto                               ;              ;
+;    |display:mostrar|       ; 22 (22)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Projeto|display:mostrar               ;              ;
+;    |maior:mais|            ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Projeto|maior:mais                    ;              ;
+;       |subtrador:subtrair| ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Projeto|maior:mais|subtrador:subtrair ;              ;
+;    |mux:multiplexador|     ; 18 (18)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Projeto|mux:multiplexador             ;              ;
 ;    |somador:som|           ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Projeto|somador:som                   ;              ;
-;    |subtrador:sub|         ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Projeto|subtrador:sub                 ;              ;
+;    |subtrador:sub|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Projeto|subtrador:sub                 ;              ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -231,15 +232,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "mux:multiplexador"                                                                  ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; ctrl ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +-------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "maior:mais|subtrador:subtrair"                                                                           ;
 +------+--------+----------+----------------------------------------------------------------------------------------------------------+
@@ -254,7 +246,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -264,7 +256,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Sat Apr 06 23:01:25 2019
+    Info: Processing started: Sun Apr 07 10:47:42 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Projeto -c Projeto
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file projeto.vhd
@@ -276,9 +268,7 @@ Warning (12019): Can't analyze file -- file Vhdl3.vhd is missing
 Warning (12019): Can't analyze file -- file Vhdl4.vhd is missing
 Warning (12019): Can't analyze file -- file Vhdl5.vhd is missing
 Warning (12019): Can't analyze file -- file Vhdl6.vhd is missing
-Info (12021): Found 2 design units, including 1 entities, in source file vhdl7.vhd
-    Info (12022): Found design unit 1: display-mostrar
-    Info (12023): Found entity 1: display
+Warning (12019): Can't analyze file -- file Vhdl7.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file menor.vhd
     Info (12022): Found design unit 1: menor-ehmenor
     Info (12023): Found entity 1: menor
@@ -289,8 +279,10 @@ Warning (12090): Entity "mux" obtained from "mux.vhd" instead of from Quartus II
 Info (12021): Found 2 design units, including 1 entities, in source file mux.vhd
     Info (12022): Found design unit 1: mux-mult
     Info (12023): Found entity 1: mux
+Info (12021): Found 2 design units, including 1 entities, in source file display.vhd
+    Info (12022): Found design unit 1: display-mostrar
+    Info (12023): Found entity 1: display
 Info (12127): Elaborating entity "Projeto" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at Projeto.vhd(6): used implicit default value for signal "dsp" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Warning (12125): Using design file somador.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: somador-soma
     Info (12023): Found entity 1: somador
@@ -307,25 +299,17 @@ Info (12128): Elaborating entity "subtrador" for hierarchy "maior:mais|subtrador
 Info (12128): Elaborating entity "menor" for hierarchy "menor:menos"
 Info (12128): Elaborating entity "inversor" for hierarchy "inversor:inverte"
 Info (12128): Elaborating entity "mux" for hierarchy "mux:multiplexador"
-Warning (10541): VHDL Signal Declaration warning at mux.vhd(6): used implicit default value for signal "ctrl" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Info (12128): Elaborating entity "display" for hierarchy "display:mostrar"
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "dsp[0]" is stuck at GND
-    Warning (13410): Pin "dsp[1]" is stuck at GND
-    Warning (13410): Pin "dsp[2]" is stuck at GND
-    Warning (13410): Pin "dsp[3]" is stuck at GND
-    Warning (13410): Pin "dsp[4]" is stuck at GND
-    Warning (13410): Pin "dsp[5]" is stuck at GND
-    Warning (13410): Pin "dsp[6]" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 71 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 92 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 12 input pins
-    Info (21059): Implemented 26 output pins
-    Info (21061): Implemented 33 logic cells
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 22 warnings
+    Info (21059): Implemented 22 output pins
+    Info (21061): Implemented 58 logic cells
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 13 warnings
     Info: Peak virtual memory: 0 megabytes
-    Info: Processing ended: Sat Apr 06 23:01:29 2019
+    Info: Processing ended: Sun Apr 07 10:47:46 2019
     Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:00
 

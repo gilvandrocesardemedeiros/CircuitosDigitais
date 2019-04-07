@@ -25,5 +25,6 @@ begin
 	cout <= (ld and (not key(0) and not key(1) and not key(2)) and carrySoma) or (ld and (key(0) and not key(1) and not key(2)) and carrySub) or (ld and (key(0) and key(1) and key(2)) and (not maiorque) and (not menorque)) or (ld and (not key(0) and key(1) and not key(2)) and maiorque) or (ld and (not key(0) and not key(1) and key(2)) and menorque);
 	--bloco de controle
 	ctrl(0) <= carrySub and (key(0) and not key(1) and not key(2));
-	ctrl(1) <= not ld;
+	--Desliga o display de 7 segmentos quando ld for 0 ou quando selecionar maior ou menor
+	ctrl(1) <= not ld or (not key(0) and key(1) and not key(2)) or (not key(0) and not key(1) and key(2));
 end mult;

@@ -2,7 +2,7 @@ entity Projeto is
 	port (a,b: in bit_vector (3 downto 0);   --bits pra operar
 			ld : in bit;                       --liga desliga
 			key: in bit_vector(2 downto 0);    --chave pra mudar operação
-			rsoma, rsub, rinv, rdisp: out bit_vector(3 downto 0);--saidas auxiliares para testar respostas
+			rsoma, rsub, rinv: out bit_vector(3 downto 0);--saidas auxiliares para testar respostas
 			dsp: out bit_vector(6 downto 0);  --saidas do display
 			cout, coutmai, coutmen: out bit);                    -- saida do led (cout) e saidas auxiliares para testar respostas
 end Projeto;
@@ -66,9 +66,9 @@ architecture main of projeto is --Bloco do projeto
 					dsp: out bit_vector (6 downto 0));
 	end component;
 	
-	signal resultadoSoma, resultadoSub, resultadoInvert, resultadoDisp :bit_vector (3 downto 0); --auxiliar para soma   (resultado)
+	signal resultadoSoma, resultadoSub, resultadoInvert, resultadoDisp :bit_vector (3 downto 0); --auxiliar para resultado
 	signal coutSoma, coutSub, coutMaior, coutMenor: bit;
-	signal controle: in bit_vector(1 downto 0);
+	signal controle: bit_vector(1 downto 0);
 	
 	begin
 		som: somador port map(a => a, b => b, s => resultadoSoma, cout=> coutSoma);
@@ -76,8 +76,8 @@ architecture main of projeto is --Bloco do projeto
 		mais: maior port map(a => b,b => a, cout => coutMaior);
 		menos: menor port map(a => a,b => b, cout => coutMenor);
 		inverte: inversor port map(a => a, s => resultadoInvert);
-		multiplexador: mux port map(soma => resultadoSoma, subtracao => resultadoSub, invertido => resultadoInvert, carrySoma => coutSoma, carrySub => coutSub, maiorque => coutMaior, menorque => coutMenor, ld => ld, key => key, resultadoDisplay => rdisp, cout => cout, ctrl => controle);
-		mostrar: display port map(y => resultadoDisplay, ctrl => controle, dsp => dsp);
+		multiplexador: mux port map(soma => resultadoSoma, subtracao => resultadoSub, invertido => resultadoInvert, carrySoma => coutSoma, carrySub => coutSub, maiorque => coutMaior, menorque => coutMenor, ld => ld, key => key, resultadoDisplay => resultadoDisp, cout => cout, ctrl => controle);
+		mostrar: display port map(y => resultadoDisp, ctrl => controle, dsp => dsp);
 		--Atribuicao das variaveis auxiliares para fins de teste
 		rsoma <= resultadoSoma;
 		rsub <= resultadoSub;
