@@ -1,0 +1,289 @@
+|Projeto
+a[0] => somador:som.a[0]
+a[0] => subtrador:sub.a[0]
+a[0] => maior:mais.b[0]
+a[0] => menor:menos.a[0]
+a[0] => inversor:inverte.a[0]
+a[1] => somador:som.a[1]
+a[1] => subtrador:sub.a[1]
+a[1] => maior:mais.b[1]
+a[1] => menor:menos.a[1]
+a[1] => inversor:inverte.a[1]
+a[2] => somador:som.a[2]
+a[2] => subtrador:sub.a[2]
+a[2] => maior:mais.b[2]
+a[2] => menor:menos.a[2]
+a[2] => inversor:inverte.a[2]
+a[3] => somador:som.a[3]
+a[3] => subtrador:sub.a[3]
+a[3] => maior:mais.b[3]
+a[3] => menor:menos.a[3]
+a[3] => inversor:inverte.a[3]
+b[0] => somador:som.b[0]
+b[0] => subtrador:sub.b[0]
+b[0] => maior:mais.a[0]
+b[0] => menor:menos.b[0]
+b[1] => somador:som.b[1]
+b[1] => subtrador:sub.b[1]
+b[1] => maior:mais.a[1]
+b[1] => menor:menos.b[1]
+b[2] => somador:som.b[2]
+b[2] => subtrador:sub.b[2]
+b[2] => maior:mais.a[2]
+b[2] => menor:menos.b[2]
+b[3] => somador:som.b[3]
+b[3] => subtrador:sub.b[3]
+b[3] => maior:mais.a[3]
+b[3] => menor:menos.b[3]
+ld => mux:multiplexador.ld
+key[0] => mux:multiplexador.key[0]
+key[1] => mux:multiplexador.key[1]
+key[2] => mux:multiplexador.key[2]
+rsoma[0] <= somador:som.s[0]
+rsoma[1] <= somador:som.s[1]
+rsoma[2] <= somador:som.s[2]
+rsoma[3] <= somador:som.s[3]
+rsub[0] <= subtrador:sub.s[0]
+rsub[1] <= subtrador:sub.s[1]
+rsub[2] <= subtrador:sub.s[2]
+rsub[3] <= subtrador:sub.s[3]
+rinv[0] <= inversor:inverte.s[0]
+rinv[1] <= inversor:inverte.s[1]
+rinv[2] <= inversor:inverte.s[2]
+rinv[3] <= inversor:inverte.s[3]
+rdisp[0] <= mux:multiplexador.resultadoDisplay[0]
+rdisp[1] <= mux:multiplexador.resultadoDisplay[1]
+rdisp[2] <= mux:multiplexador.resultadoDisplay[2]
+rdisp[3] <= mux:multiplexador.resultadoDisplay[3]
+dsp[0] <= <GND>
+dsp[1] <= <GND>
+dsp[2] <= <GND>
+dsp[3] <= <GND>
+dsp[4] <= <GND>
+dsp[5] <= <GND>
+dsp[6] <= <GND>
+cout <= mux:multiplexador.cout
+coutmai <= maior:mais.cout
+coutmen <= menor:menos.cout
+
+
+|Projeto|somador:som
+a[0] => s~0.IN0
+a[0] => cin~0.IN0
+a[1] => s~1.IN0
+a[1] => cin~1.IN0
+a[1] => cin~2.IN1
+a[2] => s~3.IN0
+a[2] => cin~5.IN0
+a[2] => cin~6.IN1
+a[3] => s~5.IN0
+a[3] => cout~0.IN0
+a[3] => cout~1.IN1
+b[0] => s~0.IN1
+b[0] => cin~0.IN1
+b[1] => s~1.IN1
+b[1] => cin~1.IN1
+b[1] => cin~4.IN1
+b[2] => s~3.IN1
+b[2] => cin~5.IN1
+b[2] => cin~8.IN1
+b[3] => s~5.IN1
+b[3] => cout~0.IN1
+b[3] => cout~3.IN1
+s[0] <= s~0.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= s~2.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= s~4.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= s~6.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Projeto|subtrador:sub
+a[0] => s~0.IN0
+a[0] => cin~0.IN0
+a[0] => cin~1.IN1
+a[1] => s~1.IN0
+a[1] => cin~2.IN0
+a[1] => cin~3.IN1
+a[2] => s~3.IN0
+a[2] => cin~6.IN0
+a[2] => cin~7.IN1
+a[3] => s~5.IN0
+a[3] => cout~0.IN0
+a[3] => cout~1.IN1
+b[0] => s~0.IN1
+b[0] => cin~0.IN1
+b[0] => cin[1].IN1
+b[1] => s~1.IN1
+b[1] => cin~2.IN1
+b[1] => cin~5.IN1
+b[2] => s~3.IN1
+b[2] => cin~6.IN1
+b[2] => cin~9.IN1
+b[3] => s~5.IN1
+b[3] => cout~0.IN1
+b[3] => cout~3.IN1
+s[0] <= s~0.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= s~2.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= s~4.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= s~6.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Projeto|maior:mais
+a[0] => subtrador:subtrair.a[0]
+a[1] => subtrador:subtrair.a[1]
+a[2] => subtrador:subtrair.a[2]
+a[3] => subtrador:subtrair.a[3]
+b[0] => subtrador:subtrair.b[0]
+b[1] => subtrador:subtrair.b[1]
+b[2] => subtrador:subtrair.b[2]
+b[3] => subtrador:subtrair.b[3]
+cout <= subtrador:subtrair.cout
+
+
+|Projeto|maior:mais|subtrador:subtrair
+a[0] => s~0.IN0
+a[0] => cin~0.IN0
+a[0] => cin~1.IN1
+a[1] => s~1.IN0
+a[1] => cin~2.IN0
+a[1] => cin~3.IN1
+a[2] => s~3.IN0
+a[2] => cin~6.IN0
+a[2] => cin~7.IN1
+a[3] => s~5.IN0
+a[3] => cout~0.IN0
+a[3] => cout~1.IN1
+b[0] => s~0.IN1
+b[0] => cin~0.IN1
+b[0] => cin[1].IN1
+b[1] => s~1.IN1
+b[1] => cin~2.IN1
+b[1] => cin~5.IN1
+b[2] => s~3.IN1
+b[2] => cin~6.IN1
+b[2] => cin~9.IN1
+b[3] => s~5.IN1
+b[3] => cout~0.IN1
+b[3] => cout~3.IN1
+s[0] <= s~0.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= s~2.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= s~4.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= s~6.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Projeto|menor:menos
+a[0] => maior:comparar.a[0]
+a[1] => maior:comparar.a[1]
+a[2] => maior:comparar.a[2]
+a[3] => maior:comparar.a[3]
+b[0] => maior:comparar.b[0]
+b[1] => maior:comparar.b[1]
+b[2] => maior:comparar.b[2]
+b[3] => maior:comparar.b[3]
+cout <= maior:comparar.cout
+
+
+|Projeto|menor:menos|maior:comparar
+a[0] => subtrador:subtrair.a[0]
+a[1] => subtrador:subtrair.a[1]
+a[2] => subtrador:subtrair.a[2]
+a[3] => subtrador:subtrair.a[3]
+b[0] => subtrador:subtrair.b[0]
+b[1] => subtrador:subtrair.b[1]
+b[2] => subtrador:subtrair.b[2]
+b[3] => subtrador:subtrair.b[3]
+cout <= subtrador:subtrair.cout
+
+
+|Projeto|menor:menos|maior:comparar|subtrador:subtrair
+a[0] => s~0.IN0
+a[0] => cin~0.IN0
+a[0] => cin~1.IN1
+a[1] => s~1.IN0
+a[1] => cin~2.IN0
+a[1] => cin~3.IN1
+a[2] => s~3.IN0
+a[2] => cin~6.IN0
+a[2] => cin~7.IN1
+a[3] => s~5.IN0
+a[3] => cout~0.IN0
+a[3] => cout~1.IN1
+b[0] => s~0.IN1
+b[0] => cin~0.IN1
+b[0] => cin[1].IN1
+b[1] => s~1.IN1
+b[1] => cin~2.IN1
+b[1] => cin~5.IN1
+b[2] => s~3.IN1
+b[2] => cin~6.IN1
+b[2] => cin~9.IN1
+b[3] => s~5.IN1
+b[3] => cout~0.IN1
+b[3] => cout~3.IN1
+s[0] <= s~0.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= s~2.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= s~4.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= s~6.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Projeto|inversor:inverte
+a[0] => s[0].DATAIN
+a[1] => s[1].DATAIN
+a[2] => s[2].DATAIN
+a[3] => s[3].DATAIN
+s[0] <= a[0].DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= a[1].DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= a[2].DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= a[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Projeto|mux:multiplexador
+soma[0] => resultadoDisplay~0.IN1
+soma[1] => resultadoDisplay~5.IN1
+soma[2] => resultadoDisplay~10.IN1
+soma[3] => resultadoDisplay~18.IN1
+subtracao[0] => resultadoDisplay~1.IN1
+subtracao[1] => resultadoDisplay~6.IN1
+subtracao[2] => resultadoDisplay~11.IN1
+subtracao[3] => resultadoDisplay~22.IN1
+invertido[0] => resultadoDisplay~3.IN1
+invertido[1] => resultadoDisplay~8.IN1
+invertido[2] => resultadoDisplay~13.IN1
+invertido[3] => resultadoDisplay~27.IN1
+carrySoma => cout~0.IN1
+carrySub => cout~1.IN1
+maiorque => cout~9.IN1
+maiorque => cout~3.IN1
+menorque => cout~13.IN1
+menorque => cout~4.IN1
+ld => resultadoDisplay~17.IN1
+ld => resultadoDisplay~21.IN1
+ld => resultadoDisplay~26.IN1
+ld => cout~8.IN1
+ld => cout~12.IN1
+key[0] => resultadoDisplay~19.IN0
+key[0] => resultadoDisplay~24.IN0
+key[0] => resultadoDisplay~15.IN0
+key[0] => cout~6.IN0
+key[1] => resultadoDisplay~24.IN1
+key[1] => cout~6.IN1
+key[1] => resultadoDisplay~15.IN1
+key[1] => resultadoDisplay~19.IN1
+key[2] => resultadoDisplay~25.IN1
+key[2] => cout~11.IN1
+key[2] => resultadoDisplay~16.IN1
+key[2] => resultadoDisplay~20.IN1
+key[2] => cout~7.IN1
+resultadoDisplay[0] <= resultadoDisplay~4.DB_MAX_OUTPUT_PORT_TYPE
+resultadoDisplay[1] <= resultadoDisplay~9.DB_MAX_OUTPUT_PORT_TYPE
+resultadoDisplay[2] <= resultadoDisplay~14.DB_MAX_OUTPUT_PORT_TYPE
+resultadoDisplay[3] <= resultadoDisplay~28.DB_MAX_OUTPUT_PORT_TYPE
+ctrl[0] <= <GND>
+ctrl[1] <= <GND>
+ctrl[2] <= <GND>
+cout <= cout~14.DB_MAX_OUTPUT_PORT_TYPE
+
+
