@@ -23,8 +23,13 @@ begin
 	resultadoDisplay(3) <= (ld and (not key(0) and not key(1) and not key(2)) and (soma(3))) or (ld and (key(0) and not key(1) and not key(2)) and (subtracao(3))) or (ld and (key(0) and key(1) and key(2)) and (invertido(3)));
 	-- resultado para led cout, na ordem: soma, subtracao, inversao, maior, menor
 	cout <= (ld and (not key(0) and not key(1) and not key(2)) and carrySoma) or (ld and (key(0) and not key(1) and not key(2)) and carrySub) or (ld and (not key(0) and key(1) and not key(2)) and maiorque) or (ld and (not key(0) and not key(1) and key(2)) and menorque);
-	--bloco de controle
-	ctrl(0) <=  (carrySub and (key(0) and not key(1) and not key(2)))or (key(0) and ((key(1)and not key(2))or (not key(1)and key(2)))) or (not key(0)and key(1)and key(2));
-	--Desliga o display de 7 segmentos quando ld for 0 ou quando selecionar maior ou menor
+
+	
+	ctrl(0) <=(carrySub and (key(0) and not key(1) and not key(2)))or  
+	          (key(0) and ((key(1)and not key(2))or (not key(1)and key(2)))) or 
+				 (not key(0)and key(1)and key(2));   
+				 
 	ctrl(1) <= not ld or (not key(0) and key(1) and not key(2)) or (not key(0) and not key(1) and key(2));
+	
+	
 end mult;

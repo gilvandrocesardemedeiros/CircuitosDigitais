@@ -41,7 +41,7 @@ set_global_assignment -name DEVICE EP2C35F672C6
 set_global_assignment -name TOP_LEVEL_ENTITY Projeto
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:02:23  APRIL 03, 2019"
-set_global_assignment -name LAST_QUARTUS_VERSION 13.0
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
@@ -84,5 +84,25 @@ set_global_assignment -name VHDL_FILE menor.vhd
 set_global_assignment -name VHDL_FILE inversor.vhd
 set_global_assignment -name VHDL_FILE mux.vhd
 set_global_assignment -name VHDL_FILE display.vhd
+set_location_assignment PIN_V2 -to a[3]
+set_location_assignment PIN_V1 -to a[2]
+set_location_assignment PIN_U4 -to a[1]
+set_location_assignment PIN_U3 -to a[0]
+set_location_assignment PIN_P2 -to b[3]
+set_location_assignment PIN_P1 -to b[2]
+set_location_assignment PIN_N1 -to b[1]
+set_location_assignment PIN_A13 -to b[0]
+set_location_assignment PIN_AD12 -to cout
+set_location_assignment PIN_N9 -to dsp[6]
+set_location_assignment PIN_P9 -to dsp[5]
+set_location_assignment PIN_L7 -to dsp[4]
+set_location_assignment PIN_L6 -to dsp[3]
+set_location_assignment PIN_L9 -to dsp[2]
+set_location_assignment PIN_L2 -to dsp[1]
+set_location_assignment PIN_L3 -to dsp[0]
+set_location_assignment PIN_C13 -to key[2]
+set_location_assignment PIN_AC13 -to key[1]
+set_location_assignment PIN_AD13 -to key[0]
+set_location_assignment PIN_AE14 -to ld
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/users/gilvandro/Desktop/projeto-cd-master/calculadora/Waveform4.vwf"
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/lu_fe/Downloads/CircuitosDigitais-master/CircuitosDigitais-master/Waveform1.vwf"
